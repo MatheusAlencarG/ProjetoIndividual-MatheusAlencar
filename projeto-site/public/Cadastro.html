@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto individual Matheus Alencar</title>
+    <link rel="stylesheet" href="CSS/cadastro.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="my-nav">
+                <div class="center-nav">
+                    <a href="Index.html"><img src="Imagens/Controler.png"></a>
+                    <ul>
+                        <li><a class="tela_valores" href="#" onmouseover="tela()"
+                                onmouseout="resetela();">Valores</a><span>/</span></li>
+                        <li><a href="Especificações.html">Especificações</a><span>/</span></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="right-nav">
+                    <h2><a href="Cadastro.html" class="bu_cadastro">Cadastro</a></h2>
+                    <h2><a href="Login.html">Login</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="telinha" onmouseover="tela()" onmouseout="resetela();">
+        <ul>
+            <li><a href="Index.html#valores">Explicando os valores</a></li>
+            <li><a href="Index.html#valores">Escolha do tema</a></li>
+            <li><a href="Index.html#imagens_jogos">Imagens dos jogos</a></li>
+        </ul>
+    </div>
+
+    <div class="div_cadastro">
+        <div class="container">
+            <div class="inputs">
+                <section class="cadastro">
+                    <form class="formulario" id="form_cadastro" method="post" onsubmit="return cadastrar()">
+
+                        <label for="nome"></label>
+                        <input id="nome_cadastro" type="text" name="nome" autofocus="autofocus" placeholder="Nome" required
+                            minlength="4"> <br>
+
+
+                        <label for="login"></label>
+                        <input id="login_cadastro" type="text" name="login" class="input-padrao" placeholder="Login" required
+                            minlength="4"> <br>
+
+
+                        <label for="senha"></label>
+                        <input id="senha_cadastro" type="password" name="senha" placeholder="Senha" required
+                            minlength="5"> <br>
+
+                        <button class="botao" type="submit" id="btn_entrar" value="Cadastrar">Cadastrar</button>
+                    </form>
+
+                    <img src="img/carregando.gif" id="img_aguarde" style="display: none;" width="100px">
+
+                    <div id="div_erro" style="background-color: #bf8899; color: maroon; display: none;">
+                        Erro no cadastro
+                    </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- <input id="id" type="text"> <br> <br> 
+                <input id="nascimento" type="date"> <br> <br>
+                <input id="senha" type="password"> <br> <br>
+                <input id="mail" type="email"> <br> -->
+
+</body>
+
+</html>
+
+<script>
+
+    function tela2() {
+        telinha.style.display = 'block';
+    }
+
+    function tela() {
+        telinha.style.display = 'block';
+    }
+
+    function resetela() {
+        telinha.style.display = 'none';
+    }
+
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'Login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
+    }
+
+</script>

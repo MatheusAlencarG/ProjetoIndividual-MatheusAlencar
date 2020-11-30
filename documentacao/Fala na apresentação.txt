@@ -1,0 +1,27 @@
+1. Bom dia, meu nome é Matheus Alencar, é o "Nome do professor" né? Tudo certo?
+
+2. Slide1 -  Bom, o meu tema é games, provavelmente esse tema é bem comum entre os projetos individuais, porém, irei falar aqui o porque isso conecta bem comigo.
+
+3. Slide2 Contextualização - Para contextualizar o tema tenho uma pergunta, por que games? Bom, porque é o tema mais comum em minha vida e é uma das coisas que pode definir meus valores, irei falar dos games que mais me marcaram ao longo de minha vida e explicarei os meus valores de cada game.
+
+4. Slide3 Em que momento eu me interessei pelo tema? - Desde criança eu joguei e desde criança eu tive vários ponos negativos e positivos por causa de games. Aproveitei bem esses pontos positivos, e utilizei os pontos negativos como aprendizado. No site explicarei melhor sobre esses pontos.
+
+5. Slide4 Qual a maior superação na realização desse desafio? - Minha maior superação foi fazer um site muito legal, utilizando HTML, CSS, JS e conseguir fazer um site que me agradou muito.
+
+6. Slide5 Qual foi a maior dificuldade? - Muinha maior dificuldade foi me auto analizar para conectar o tema com meus próprios valores.
+
+7. Site Index - Primeira parte no Index falar as escolhas das cores, depois a navbar com o botão de Home, Login, Cadastro, Valores, Especificações e sobre. Explicar o onmouseover e onmouseout com display block e none. Depois ir para Explicando os Valores e ler. Depois ir para Escolha do tema e ler. Depois ir para os Slider e explicar tecnicamente.
+
+8. Especificações - Para expecificações explicar que tem dois botões e ler cada jogo brevemente e ir para os Personagens.
+
+9. Personagens - Ler a biografia de cada personagem e resumir suas história e explicar o porque escolhi esse expecificos ersonagens e mostrar o quão incrivel é esses curta animação.
+
+10. Sobre - Explicar que só tem acesso ao sobre quem tem cadastro, cadastrar um novo login, logar e ler o sobre. Explicar um pouco tecnico sobre a conexção com o banco de dados.
+
+11. Footer - Explicar o footer.
+
+12. Slide6 Há alguém que deva receber a sua gratidão por você ter conseguido chegar ao resultado final? - Quero agradecer muito a Fernanda, Felipe Olegário e Gabriel Eduardo por me ajudarem bastante em momentos técnicos que eu precisei ao longo do projeto.
+
+13. Slide7 Conclusão - Concluindo, o tema de games foi o tema que consegui encontrar que mais esteve presente em minha vida e conectou bem com meus dois valores apresentado. Agradeço, um bom dia e até a próxima.
+
+14. Slide8 Obrigado pela atenção.

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto individual Matheus Alencar</title>
+    <link rel="stylesheet" href="CSS/Especificações.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="my-nav"> 
+                <div class="center-nav"> 
+                    <a href="Index.html"><img src="Imagens/Controler.png"></a>
+                    <ul>
+                        <li><a class="tela_valores" href="#" onmouseover="tela()" onmouseout="resetela();">Valores</a><span>/</span></li>
+                        <li><a href="Especificações.html" class="bu_espe">Especificações</a><span>/</span></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="right-nav">
+                    <h2><a href="Cadastro.html">Cadastro</a></h2>
+                    <h2><a href="Login.html">Login</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="float_tela" onmouseover="tela()" onmouseout="resetela();">
+        <ul>
+            <li><a href="Index.html#valores">Explicando os valores</a></li>
+            <li><a href="Index.html#valores">Escolha do tema</a></li>
+            <li><a href="Index.html#imagens_jogos">Imagens dos jogos</a></li>
+        </ul>
+    </div>
+
+    <div class="conteudo">
+        <div class="container">
+            <h1>Especificações</h1>
+            <div class="left_div">
+
+                <h2 id="titulo1" style="display: block;">God Of War</h2>
+                <p id="paragrafo1" style="display: block;">
+                    O tema do jogo é na mitologia grega, e lá nasce o Kratos que é filho de Zeus e mata todos os deuses se sua mitologia, depois disso foge para para a mitologia nórdica, onde tem uma nova vida e uma família. Apesar de ser um jogo violento, esse jogo foi aquele jogo que me acompanhou desde criança, um dos primeiros que eu joguei, e ele se encaixa no valor de comunhão. <br> <br>
+                    <span>Comunhão:</span> O jogo me proporcionou muitos momentos de ideias, conspirações e conversas com amigos.<br> <br> <br>
+                </p>
+                <h2 id="titulo2" style="display: none;">Valorant</h2>
+                <p id="paragrafo2" style="display: none;">
+                    Um jogo online competitivo que se trata de uma equipe plantar uma bomba em uma determinada área do mapa, e o outro time tem que defender. Esse jogo é recente porém me proporciona bastante a comunhão e o aprendizado. <br> <br>
+                    <span>Comunhão:</span> O jogo me proporcionou muitos momentos de diversão e conversas com amigos. <br>
+                    <span>Aprendizado:</span> O jogo me ensinou bastante a ter uma melhor comunicação com a equipe e não se precipitar.<br> <br><br>
+                </p>
+                <h2 id="titulo3" style="display: none;">Among Us</h2>
+                <p id="paragrafo3" style="display: none;">
+                    É um jogo onde você está em uma nave, tem 10 jogadores nela e tem um impostor entre os jogadores, se você é o impostor tem que enganar os outros jogadores e matar eles. Mesmo tendo que mentir para ganhar esse jogo se conecta bastante com os valores aprendizado e comunhão. <br> <br>
+                    <span>Comunhão:</span> O jogo me proporcionou muitos momentos de diversão e conversas com amigos. <br>
+                    <span>Aprendizado:</span> O jogo me ensinou a me expressar melhor.<br> <br><br>
+                </p>
+                <h2 id="titulo4" style="display: none;">Overwatch</h2>
+                <p id="paragrafo4" style="display: none;">
+                    É um jogo onde existem duas equipes, e dependendo do modo você tem diferentes objetivos, o jogo também tem diversos personagens com histórias diferentes. Um jogo que me se conecta muito com os valores de comunhão e aprendizado. <br> <br>
+                    <span>Comunhão:</span> O jogo me proporcionou muitos momentos de diversão e conversas com amigos. <br>
+                    <span>Aprendizado:</span> O jogo me ensinou a agir melhor em equipe. <br> <br>
+                    <button><a href="Personagem.html">Personagens</a></button>
+                </p>
+                <h2 id="titulo5" style="display: none;">Fortnite</h2>
+                <p id="paragrafo5" style="display: none;">
+                    É um jogo battleroyale onde 100 pessoas caem em um mapa grande para sobreviver e o objetivo é ser o último vivo, um jogo que eu tive grandes momentos de comunhão e grandes aprendizados. <br> <br>
+                    <span>Comunhão:</span> O jogo me proporcionou muitos momentos de diversão e conversas com amigos. <br>
+                    <span>Aprendizado:</span> O jogo me ensinou a aceitar melhor meus próprios erros, já que o jogo depende apenas de minhas escolhas e ações.<br> <br><br>
+                </p>
+                <h2 id="titulo6" style="display: none;">Rocket League</h2>
+                <p id="paragrafo6" style="display: none;">
+                    É um jogo de carro e footbol, onde você tem vários modos diferentes, e nesse jogo foi onde eu tive grandes momentos de comunhão. <br> <br>
+                    <span>Comunhão:</span> O jogo me proporcionou muitos momentos de diversão e conversas com amigos.<br> <br><br><br><br><br>
+                </p>
+            </div>
+
+            <div class="right_div">
+                <div class="images">
+                    <button onclick="esquerda()" class="left_button"><</button>
+                    <img src="Imagens/s1.jpg" id="imagens">
+                    <button onclick="direita()" class="right_button">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="redes">
+                <h3>Quem sou eu:</h3>
+                <p>
+                    Meu nome é Matheus Alencar Garcia e sou um aluno da faculdade BandTec.
+                </p>
+            </div>
+            <div class="barra"></div>
+            <div class="redes">
+                <h3>Redes sociais:</h3>
+                <a href="https://www.facebook.com/matheus.alencar.946954"><img src="Imagens/FACEBOOK.png"></a>
+                <a href="https://www.instagram.com/mathgar_alencar/"><img src="Imagens/Insta.png"></a>
+                <a href="https://www.youtube.com/channel/UCC0HrvldmZUaGz6OGl6acbw?view_as=subscriber"><img src="Imagens/YouTube.png"></a>
+            </div>
+            <div class="barra"></div>
+            <div class="redes">
+                <h3>Contatos: </h3>
+                <p>
+                    (11) 98100-7778 <br>
+                    matheus.garcia@bandtec.com.br
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <img src="Imagens/Overwatch logo.jpg"> -->
+
+</body>
+
+</html>
+
+<script>
+
+    var click = 0;
+
+    function direita() {
+        click += 1;
+
+        titulo1.style.display = 'none';
+        titulo2.style.display = 'none';
+        titulo3.style.display = 'none';
+        titulo4.style.display = 'none';
+        titulo5.style.display = 'none';
+        titulo6.style.display = 'none';
+        paragrafo1.style.display = 'none';
+        paragrafo2.style.display = 'none';
+        paragrafo3.style.display = 'none';
+        paragrafo4.style.display = 'none';
+        paragrafo5.style.display = 'none';
+        paragrafo6.style.display = 'none';
+
+        if (click == 1) {
+            imagens.src = 'Imagens/s6.jpg';
+            titulo2.style.display = 'block';
+            paragrafo2.style.display = 'block';
+        } else if (click == 2) {
+            imagens.src = 'Imagens/s2.jpg';
+            titulo4.style.display = 'block';
+            paragrafo4.style.display = 'block';
+        } else if (click == 3) {
+            imagens.src = 'Imagens/s3.jpg';
+            titulo3.style.display = 'block';
+            paragrafo3.style.display = 'block';
+        } else if (click == 4) {
+            imagens.src = 'Imagens/s4.jpg';
+            titulo5.style.display = 'block';
+            paragrafo5.style.display = 'block';
+        } else if (click == 5) {
+            imagens.src = 'Imagens/s5.jpg';
+            titulo6.style.display = 'block';
+            paragrafo6.style.display = 'block';
+        } else {
+            imagens.src = 'Imagens/s1.jpg';
+            titulo1.style.display = 'block';
+            paragrafo1.style.display = 'block';
+            click = 0;
+        }
+    }
+
+    function esquerda() {
+        click -= 1;
+
+        titulo1.style.display = 'none';
+        titulo2.style.display = 'none';
+        titulo3.style.display = 'none';
+        titulo4.style.display = 'none';
+        titulo5.style.display = 'none';
+        titulo6.style.display = 'none';
+        paragrafo1.style.display = 'none';
+        paragrafo2.style.display = 'none';
+        paragrafo3.style.display = 'none';
+        paragrafo4.style.display = 'none';
+        paragrafo5.style.display = 'none';
+        paragrafo6.style.display = 'none';
+        
+        if (click == 0) {
+            imagens.src = 'Imagens/s1.jpg';
+            titulo1.style.display = 'block';
+            paragrafo1.style.display = 'block';
+        } else if (click == 2) {
+            imagens.src = 'Imagens/s2.jpg';
+            titulo4.style.display = 'block';
+            paragrafo4.style.display = 'block';
+        } else if (click == 1) {
+            imagens.src = 'Imagens/s6.jpg';
+            titulo2.style.display = 'block';
+            paragrafo2.style.display = 'block';
+        } else if (click == 3) {
+            imagens.src = 'Imagens/s3.jpg';
+            titulo3.style.display = 'block';
+            paragrafo3.style.display = 'block';
+        } else if (click == 4) {
+            imagens.src = 'Imagens/s4.jpg';
+            titulo5.style.display = 'block';
+            paragrafo5.style.display = 'block';
+        } else {
+            imagens.src = 'Imagens/s5.jpg';
+            titulo6.style.display = 'block';
+            paragrafo6.style.display = 'block';
+            click = 5;
+        }
+    }
+
+    function tela2() {
+        float_tela.style.display = 'block';
+    }
+
+    function tela() {
+        float_tela.style.display = 'block';
+    }
+
+    function resetela() {
+        float_tela.style.display = 'none';
+    }
+
+
+</script>

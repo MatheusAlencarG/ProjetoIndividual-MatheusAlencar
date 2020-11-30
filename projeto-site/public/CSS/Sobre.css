@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    background-image: url(../Imagens/Fundo\ login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Começo da Navbar */
+
+.navbar {
+    height: 110px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0; 
+    background-image: url(../Imagens/Fundo\ login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.center-nav {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-left: 33%;
+}
+
+.right-nav {
+    float: right;
+    overflow: auto;
+    width: 300px;
+    margin-top: 45px;
+    height: 25px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.my-nav {
+    overflow: auto; 
+}
+
+.navbar img {
+    width: 100px;
+    padding-left: 0;
+    padding-top: 15px;
+}
+
+.navbar h2 {
+    float: right;
+    color: white;
+    padding-left: 2.2%;
+    margin-top: 40px;
+}
+
+.navbar ul {
+    margin-left: 0; 
+    padding-left: 0; 
+    text-transform: uppercase;
+    overflow: auto;
+    height: 21px;
+}
+
+.navbar li {
+    list-style: none;
+    margin-left: 1.5%;
+    display: inline-block;
+    text-align: center; 
+}
+
+.navbar span {
+    color: white;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+.navbar .right-nav a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+#float_tela {
+    top: 0;
+    width: 232px;
+    height: 111px;
+    border: 1px #1ba4ff solid;
+    margin-top: 110px;
+    margin-left: 539px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.493);
+    display: none;
+    text-align: center;
+    position: fixed;
+    border-radius: 20px;
+}
+
+#float_tela li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#float_tela ul {
+    padding: 0;
+}
+
+#float_tela a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+.bu_sobre {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+#b_usuario {
+    color: #1ba4ff;
+}
+
+/* Fim da Navbar */
+
+
+/* Começo conteudo */
+
+.conteudo {
+    margin-top: 150px;
+    overflow: auto;
+}
+
+.left_div {
+    float: left;
+    color: white;
+    width: 49%;
+    text-align: center;
+}
+
+.left_div p {
+    font-size: 19px;
+}
+
+.left_div h2 {
+    color: #1ba4ff;
+    font-size: 30px;
+}
+
+.right_div {
+    float: right;
+    width: 49%;
+    text-align: center;
+}
+
+.right_div img {
+    width: 400px;
+    border-radius: 50px;
+}
+
+
+/* Fim conteudo */
+
+
+/* Começo footer */
+
+.footer {
+    height: 150px;
+    background-color: grey;
+    margin-top: 49px;
+    border-top: 4px #1ba4ff solid;
+}
+
+.redes {
+    width: 33%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.redes img {
+    width: 125px;
+}
+
+/* Fim footer */

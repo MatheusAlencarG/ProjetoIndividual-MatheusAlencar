@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto individual Matheus Alencar</title>
+    <link rel="stylesheet" href="CSS/Login.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="container">
+            <div class="my-nav"> 
+                <div class="center-nav"> 
+                    <a href="Index.html"><img src="Imagens/Controler.png"></a>
+                    <ul>
+                        <li><a class="tela_valores" href="#" onmouseover="tela()" onmouseout="resetela();">Valores</a><span>/</span></li>
+                        <li><a href="Especificações.html">Especificações</a><span>/</span></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="right-nav">
+                    <h2><a href="Cadastro.html">Cadastro</a></h2>
+                    <h2><a href="Login.html" class="bu_login">Login</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="float_tela" onmouseover="tela()" onmouseout="resetela();">
+        <ul>
+            <li><a href="Index.html#valores">Explicando os valores</a></li>
+            <li><a href="Index.html#valores">Escolha do tema</a></li>
+            <li><a href="Index.html#imagens_jogos">Imagens dos jogos</a></li>
+        </ul>
+    </div>
+
+    <div class="pag-login">
+        <div class="container">
+            <div class="box-login">
+
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <input id="login_login" type="text" class="input-padrao" name="login" placeholder="Nome">
+                    <br>
+                    <input id="senha_login" type="password" class="input-padrao" name="senha" placeholder="Senha">
+                    <br>
+                    <button id="btn_entrar" class="btn">Entrar</button>
+                </form>
+
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro">
+                    </div>
+
+                    <img src="img/carregando.gif" id="img_aguarde"  >
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function tela2() {
+        float_tela.style.display = 'block';
+    }
+
+    function tela() {
+        float_tela.style.display = 'block';
+    }
+
+    function resetela() {
+        float_tela.style.display = 'none';
+    }
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'Sobre.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+
+</script>

@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    background-image: url(../Imagens/contro2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Começo da Navbar */
+
+.navbar {
+    height: 110px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0; 
+    background-image: url(../Imagens/contro2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center-nav {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-left: 33%;
+}
+
+.right-nav {
+    float: right;
+    overflow: auto;
+    width: 33%;
+    margin-top: 10px;
+}
+
+.my-nav {
+    overflow: auto; 
+}
+
+.navbar img {
+    width: 100px;
+    padding-left: 0;
+    padding-top: 15px;
+}
+
+.navbar h2 {
+    float: right;
+    color: white;
+    padding-left: 2.2%;
+    margin-top: 40px;
+}
+
+.navbar ul {
+    margin-left: 0; 
+    padding-left: 0; 
+    text-transform: uppercase;
+    overflow: auto;
+    height: 21px;
+}
+
+.navbar li {
+    list-style: none;
+    margin-left: 1.5%;
+    display: inline-block;
+    text-align: center; 
+}
+
+.navbar span {
+    color: white;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+.navbar .right-nav a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+#telinha {
+    top: 0;
+    width: 232px;
+    height: 111px;
+    border: 1px #1ba4ff solid;
+    margin-top: 110px;
+    margin-left: 539px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.493);
+    display: none;
+    text-align: center;
+    position: fixed;
+    border-radius: 20px;
+}
+
+#telinha li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#telinha ul {
+    padding: 0;
+}
+
+#telinha a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+.bu_cadastro {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+/* Fim da Navbar */
+
+
+
+/* Começo cadastro */
+.inputs {
+    padding-top: 333px;
+    text-align: center;
+}
+
+.cadastro input {
+    background: none;
+    border: none;
+    border-bottom: 5px #1ba4ff solid;
+    outline: none;
+    height: 32px;
+    width: 300px;
+    font-size: 25px;
+    color: #1ba4ff;
+    padding-left: 55px;
+    background-repeat: no-repeat;
+    background-size: 56px;
+}
+
+#login_cadastro {
+    background-image: url(../Imagens/Usericon.png);
+}
+
+#nome_cadastro {
+    background-image: url(../Imagens/Nome\ icon.png);
+}
+
+#senha_cadastro {
+    background-image: url(../Imagens/cadeado.png);
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 3px #1ba4ff solid;
+    border-radius: 20px;
+    text-transform: uppercase;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 15px;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: #1ba4ff;
+    color: black;
+}
+
+/* Fim cadastro */
+
+/* Extra começo */
+
+.extra {
+    margin: 10px;
+}
+
+.extra img {
+  height: 50px;
+   visibility: hidden;
+}
+
+.extra .msg_erro {
+    background-color:  #e7b9c4; 
+    color: black; 
+    visibility: hidden;
+} 
+
+/* Extra fim */

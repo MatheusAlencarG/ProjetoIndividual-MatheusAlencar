@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    background-image: url(../Imagens/Fundo\ login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Começo da Navbar */
+
+.navbar {
+    height: 110px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0; 
+    background-image: url(../Imagens/Fundo\ login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.center-nav {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-left: 33%;
+}
+
+.right-nav {
+    float: right;
+    overflow: auto;
+    width: 33%;
+    margin-top: 10px;
+}
+
+.my-nav {
+    overflow: auto; 
+}
+
+.navbar img {
+    width: 100px;
+    padding-left: 0;
+    padding-top: 15px;
+}
+
+.navbar h2 {
+    float: right;
+    color: white;
+    padding-left: 2.2%;
+    margin-top: 40px;
+}
+
+.navbar ul {
+    margin-left: 0; 
+    padding-left: 0; 
+    text-transform: uppercase;
+    overflow: auto;
+    height: 21px;
+}
+
+.navbar li {
+    list-style: none;
+    margin-left: 1.5%;
+    display: inline-block;
+    text-align: center; 
+}
+
+.navbar span {
+    color: white;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+.navbar .right-nav a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+#float_tela {
+    top: 0;
+    width: 232px;
+    height: 111px;
+    border: 1px #1ba4ff solid;
+    margin-top: 110px;
+    margin-left: 539px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.493);
+    display: none;
+    text-align: center;
+    position: fixed;
+    border-radius: 20px;
+}
+
+#float_tela li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#float_tela ul {
+    padding: 0;
+}
+
+#float_tela a:hover {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+.bu_espe {
+    border-bottom: 2px #1ba4ff solid;
+}
+
+/* Fim da Navbar */
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 3px #1ba4ff solid;
+    border-radius: 20px;
+    text-transform: uppercase;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: #1ba4ff;
+    color: black;
+}
+
+/* Começo Conteudo */
+
+.conteudo {
+    margin-top: 110px;
+    overflow: auto;
+    /* border: 3px purple solid; */
+}
+
+.left_div {
+    float: left;
+    width: 49%;
+    text-align: center;
+    /* border: 3px yellow solid; */
+
+}
+
+.conteudo h1 {
+    color: #1ba4ff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.left_div h2 {
+    color: #1ba4ff;
+    font-size: 30px;
+}
+
+.left_div p {
+    color: white;
+    font-size: 19px;
+}
+
+.left_div p span {
+    color: #1ba4ff;
+}
+
+.images {
+    width: 675px;
+    float: right;
+}
+
+.right_div {
+    float: right;
+    width: 49%;
+    text-align: center;
+    /* border: 3px red solid; */
+}
+
+#imagens {
+    width: 500px;
+    border-radius: 25px;
+    border: 3px #1ba4ff solid;
+}
+
+.left_button {
+    float: left;
+    margin-top: 125px;
+    margin-left: 8%;
+}
+
+.right_button {
+    float: right;
+    margin-top: 125px;
+    margin-right: 8%;
+}
+
+/* Fim Conteudo */
+
+
+/* Começo footer */
+
+.footer {
+    height: 150px;
+    background-color: grey;
+    margin-top: 71px;
+    border-top: 4px #1ba4ff solid;
+}
+
+.redes {
+    width: 33%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.redes img {
+    width: 125px;
+}
+
+/* Fim footer */

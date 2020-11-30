@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto individual Matheus Alencar</title>
+    <link rel="stylesheet" href="CSS/Sobre.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+</head>
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+    
+</script>
+<body onload="verificar_autenticacao()">
+
+    <div class="navbar">
+        <div class="container">
+            <div class="my-nav"> 
+                <div class="center-nav"> 
+                    <a href="Index.html"><img src="Imagens/Controler.png"></a>
+                    <ul>
+                        <li><a class="tela_valores" href="#" onmouseover="tela()" onmouseout="resetela();">Valores</a><span>/</span></li>
+                        <li><a href="Especificações.html">Especificações</a><span>/</span></li>
+                        <li><a href="Sobre.html" class="bu_sobre">Sobre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="right-nav">
+                    <li>Bem vindo, <b id="b_usuario"></b></li>
+                    <li><a href="" onclick="logoff()">LOGOUT</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="float_tela" onmouseover="tela()" onmouseout="resetela();">
+        <ul>
+            <li><a href="Index.html#valores">Explicando os valores</a></li>
+            <li><a href="Index.html#valores">Escolha do tema</a></li>
+            <li><a href="Index.html#imagens_jogos">Imagens dos jogos</a></li>
+        </ul>
+    </div>
+
+    <div class="conteudo">
+        <div class="container">
+            <div class="left_div">
+                <h2>Sobre:</h2>
+                <p>
+                    Meu nome é Matheus Alencar, minha mãe se chama Liria e meu pai Marcelo, cresci sempre com muito amor e carinho, e eles sempre me ensinaram muitas coisas, inclusive o que dar valor e o que não dar, por isso esse site fala de comunhão e aprendizado, minha mãe principalmente foi quem me ensinou esses valores, hoje o que eu mais dou valor é estar com a família e amigos, antigamente eu não era assim, e não foi a muito tempo que eu mudei. Uma outra coisa sobre mim é que eu reflito e penso muito nas coisas, então em minha visão eu mudo muito rápido, sempre visando o bem mútuo ao meu redor. <br>
+                    <br>
+                    Profissionalmente acredito que eu seja uma pessoa mais analitica porém gosto bastante de desenvolver, e em situações de HomeOffice acredito que afetaria um pouco meu desempenho e habituação na empresa, porém eu sempre estarei me esforçando e compremetendo o máximo possível para sempre estar aprendendo e evoluindo.
+                </p>
+            </div>
+
+            <div class="right_div">
+                <img src="Imagens/Foto.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="redes">
+                <h3>Quem sou eu:</h3>
+                <p>
+                    Meu nome é Matheus Alencar Garcia e sou um aluno da faculdade BandTec.
+                </p>
+            </div>
+            <div class="barra"></div>
+            <div class="redes">
+                <h3>Redes sociais:</h3>
+                <a href="https://www.facebook.com/matheus.alencar.946954"><img src="Imagens/FACEBOOK.png"></a>
+                <a href="https://www.instagram.com/mathgar_alencar/"><img src="Imagens/Insta.png"></a>
+                <a href="https://www.youtube.com/channel/UCC0HrvldmZUaGz6OGl6acbw?view_as=subscriber"><img src="Imagens/YouTube.png"></a>
+            </div>
+            <div class="barra"></div>
+            <div class="redes">
+                <h3>Contatos: </h3>
+                <p>
+                    (11) 98100-7778 <br>
+                    matheus.garcia@bandtec.com.br
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function tela2() {
+        float_tela.style.display = 'block';
+    }
+
+    function tela() {
+        float_tela.style.display = 'block';
+    }
+
+    function resetela() {
+        float_tela.style.display = 'none';
+    }
+
+
+
+</script>
