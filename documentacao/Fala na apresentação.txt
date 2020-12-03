@@ -4,11 +4,11 @@
 
 3. Slide2 Contextualização - Para contextualizar o tema tenho uma pergunta, por que games? Bom, porque é o tema mais comum em minha vida e é uma das coisas que pode definir meus valores, irei falar dos games que mais me marcaram ao longo de minha vida e explicarei os meus valores de cada game.
 
-4. Slide3 Em que momento eu me interessei pelo tema? - Desde criança eu joguei e desde criança eu tive vários ponos negativos e positivos por causa de games. Aproveitei bem esses pontos positivos, e utilizei os pontos negativos como aprendizado. No site explicarei melhor sobre esses pontos.
+4. Slide3 Em que momento eu me interessei pelo tema? - Desde criança eu joguei e desde criança eu tive vários pontos negativos e positivos por causa de games. Aproveitei bem esses pontos positivos, e utilizei os pontos negativos como aprendizado. No site explicarei melhor sobre esses pontos.
 
 5. Slide4 Qual a maior superação na realização desse desafio? - Minha maior superação foi fazer um site muito legal, utilizando HTML, CSS, JS e conseguir fazer um site que me agradou muito.
 
-6. Slide5 Qual foi a maior dificuldade? - Muinha maior dificuldade foi me auto analizar para conectar o tema com meus próprios valores.
+6. Slide5 Qual foi a maior dificuldade? - Minha maior dificuldade foi me auto analizar para conectar o tema com meus próprios valores.
 
 7. Site Index - Primeira parte no Index falar as escolhas das cores, depois a navbar com o botão de Home, Login, Cadastro, Valores, Especificações e sobre. Explicar o onmouseover e onmouseout com display block e none. Depois ir para Explicando os Valores e ler. Depois ir para Escolha do tema e ler. Depois ir para os Slider e explicar tecnicamente.
 
